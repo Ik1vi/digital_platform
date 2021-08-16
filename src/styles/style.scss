@@ -1,4 +1,9 @@
 @import "normalize.scss";
+@import "variables.scss";
+@import "mixins.scss";
 @import "fonts.scss";
 @import "global.scss";
 @import "visually-hidden.scss";
+
+@import "blocks/cases.scss";
+@import "blocks/fixed-container.scss";

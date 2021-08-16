@@ -10,14 +10,14 @@ html {
 
 body {
 	min-width: 320px;
-	margin: 0; /* убирает внешние отступы */
+	margin: 0;
 
-	background-color: white; /* задает цвет фона */
+	background-color: $WHITE;
 	
-	font-family: "Circe", "Helvetica", "Arial", sans-serif; /* задает семейство шрифта */
-	font-size: 14px; /* задает размер шрифта */
-	line-height: 1.5;/* задает межстрочное расстояние */
-	color: red; /* задает цвет шрифта */
+	font-family: "Circe", "Helvetica", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	color: $text-primary-color;
 
 	transition: color, background-color 0.8s;
 }
