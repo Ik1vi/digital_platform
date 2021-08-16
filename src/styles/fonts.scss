@@ -1,0 +1,24 @@
+
+@font-face {
+  font-weight: 400;
+  font-family: 'Circe';
+  font-style: normal;
+  font-display: swap;
+
+  src:
+    local('circe'), local('circe'),
+    url('../fonts/circe.woff2') format('woff2'), 
+    url('../fonts/circe.woff') format('woff');
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'circe';
+  font-style: normal;
+  font-display: swap;
+
+  src:
+    local('circe_bold'), local('circe_bold'),
+    url('../fonts/circe_bold.woff2') format('woff2'),
+    url('../fonts/circe_bold.woff') format('woff');
+}
