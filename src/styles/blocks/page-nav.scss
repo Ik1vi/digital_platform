@@ -1,0 +1,45 @@
+.page-nav {
+  padding: 7px 0;
+
+  font-weight: 700;
+
+  &__list {
+    @include list-reset;
+    @include flex-container(space-between, center);
+    padding: 8px 4px;
+  }
+
+  &__item {
+    margin-right: 4px;
+    min-width: 165px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    position: relative;
+    padding: 0 23px;
+
+    &--active {
+      font-weight: 400;
+      color: $WHITE;
+
+      &:after {
+        position: absolute;
+        left: -7px;
+        top: -8px;
+        z-index: -1;
+
+        height: 38px;
+        width: 171px;
+
+        content: "";
+
+        border-radius: 50px;
+        background-color: $primary-color;
+      }
+    }
+  }
+}

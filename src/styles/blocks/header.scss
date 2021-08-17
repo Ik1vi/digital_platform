@@ -1,0 +1,24 @@
+.header {
+  padding-bottom: 532px;;
+
+  &__bar {
+    @include flex-container(space-between, start);
+
+    padding: 28px 0;
+  }
+
+  &__logo {
+    max-width: 208px;
+    margin-top: 27px;
+  }
+
+  &__title {
+    max-width: 560px;
+    margin-top: 55px;
+    margin-bottom: 0;
+
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 111.4%;
+  }
+}

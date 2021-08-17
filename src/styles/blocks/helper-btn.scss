@@ -1,0 +1,21 @@
+.helper-btn {
+  @include button-reset;
+  position: relative;
+
+  min-width: 145px;
+  padding: 8px 0 7px 54px;
+
+  color: $primary-color;
+  font-weight: 700;
+
+  &::before {
+    position: absolute;
+
+    left: 0;
+    top: 1px;
+    height: 38px;
+    width: 38px;
+
+    content: url("../img/logo-icon.svg");
+  }
+}
