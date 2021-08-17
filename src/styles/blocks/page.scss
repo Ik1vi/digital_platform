@@ -1,3 +1,12 @@
 .page {
+  padding-bottom: 18px;
   text-align: center;
+
+  &__section {
+    margin-bottom: 137px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }

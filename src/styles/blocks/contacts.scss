@@ -1,0 +1,17 @@
+.contacts {
+  &__list {
+    @include list-reset;
+    @include flex-container(space-between, center);
+
+    color: $WHITE;
+    font-style: normal;
+  }
+
+  &__item {
+    margin-left: 40px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

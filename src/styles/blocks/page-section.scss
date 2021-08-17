@@ -1,8 +1,16 @@
 .page-section {
-  padding: 20px 0 270px;
+  padding: 20px 0 134px;
 
   &:nth-child(2) {
-    padding: 20px 0 183px;
+    padding: 20px 0 45px;
+  }
+
+  &:nth-child(3) {
+    padding: 20px 0;
+  }
+
+  &:last-child {
+    padding: 49px 0;
   }
 
   &__title {
@@ -14,6 +22,11 @@
     font-size: 30px;
     font-weight: bold;
     line-height: 117.4%;
+
+    &--questions {
+      font-size: 35px;
+      line-height: 52px;
+    }
 
     &--primary {
       max-width: fit-content;
@@ -51,6 +64,11 @@
         background-position: -144px 0;
       }
     }
+  }
+
+  &__text {
+    max-width: 265px;
+    margin: 7px auto 28px;
   }
 
   &__btns-list {

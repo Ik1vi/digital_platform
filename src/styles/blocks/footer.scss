@@ -1,0 +1,12 @@
+.footer {
+  &__container {
+    @include flex-container(space-between, center);
+
+    padding: 31px 78px 31px 62px;
+    background-color: $dark-shades;
+  }
+
+  &__page-nav {
+    @include indent-reset;
+  }
+}
