@@ -1,0 +1,14 @@
+.btn {
+  @include button-reset;
+  padding: 11px 70px 11px 75px;
+
+  background-color: $secondary-color;
+  color: $WHITE;
+
+  font-size: 22px;
+  border-radius: 50px;
+
+  &--primary {
+    background-color: $primary-color;
+  }
+}

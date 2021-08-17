@@ -1,0 +1,18 @@
+.btns-list {
+  @include list-reset;
+  @include flex-container(center, center);
+
+  &__item {
+    margin-right: 26px;
+
+    &:first-child {
+      .btns-list__btn {
+        padding: 11px 65px 11px 53px;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
