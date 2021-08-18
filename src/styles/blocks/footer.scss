@@ -1,4 +1,10 @@
 .footer {
+
+  &__section {
+    padding-bottom: 18px;
+    text-align: center;
+  }
+
   &__container {
     @include flex-container(space-between, center);
 

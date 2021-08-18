@@ -15,10 +15,152 @@
 
     &:first-child {
       margin-bottom: 27px;
+
+      .cases__picture-wrapper {
+        position: relative;
+        padding: 61px 43px 20px;
+
+        background-image: url("../img/cases-sprite.svg");
+        background-repeat: no-repeat;
+        background-size: 665px;
+        background-position: 7px 20px;
+
+        &::before {
+          position: absolute;
+          left: 121px;
+          top: 19px;
+
+          height: 30px;
+          width: 40px;
+    
+          content: "";
+          
+          background-image: url("../img/icon-sprite.svg");
+          background-repeat: no-repeat;
+          background-size: 155px;
+          background-position: -64px -59px;
+        }
+
+        &::after {
+          position: absolute;
+          left: 232px;
+          top: 160px;
+
+          height: 66px;
+          width: 40px;
+    
+          content: "";
+          
+          background-image: url("../img/icon-sprite.svg");
+          background-repeat: no-repeat;
+          background-size: 155px;
+          background-position: -64px -118px;
+        }
+      }
+
+      .cases__img {
+        max-width: 188px;
+        transform: rotate(1deg);
+      }
     }
+
+    &:nth-child(2) {
+      .cases__picture-wrapper {
+        position: relative;
+        padding: 60px 50px 45px;
+
+        background-image: url("../img/cases-sprite.svg");
+        background-repeat: no-repeat;
+        background-size: 665px;
+        background-position: -384px 5px;
+
+        &::before {
+          position: absolute;
+          left: 12px;
+          top: 269px;
+
+          height: 38px;
+          width: 40px;
+    
+          content: "";
+          
+          background-image: url("../img/icon-sprite.svg");
+          background-repeat: no-repeat;
+          background-size: 155px;
+          background-position: -119px -60px;
+        }
+
+        &::after {
+          position: absolute;
+          left: 172px;
+          top: 27px;
+
+          height: 35px;
+          width: 60px;
+    
+          content: "";
+          
+          background-image: url("../img/icon-sprite.svg");
+          background-repeat: no-repeat;
+          background-size: 155px;
+          background-position: 0px 0;
+        }
+      }
+
+      .cases__img {
+        max-width: 206px;
+      }
+    }
+
     &:last-child {
       margin-bottom: 0;
       margin-top: 44px;
+
+      .cases__picture-wrapper {
+        position: relative;
+        padding: 53px 54px 55px;
+
+        background-image: url("../img/cases-sprite.svg");
+        background-repeat: no-repeat;
+        background-size: 665px;
+        background-position: 17px -352px;
+
+        &::before {
+          position: absolute;
+          left: 21px;
+          top: 25px;
+
+          height: 38px;
+          width: 40px;
+    
+          content: "";
+          
+          background-image: url("../img/icon-sprite.svg");
+          background-repeat: no-repeat;
+          background-size: 155px;
+          background-position: 0 -132px;
+        }
+
+        &::after {
+          position: absolute;
+          left: 275px;
+          top: 157px;
+
+          height: 65px;
+          width: 40px;
+    
+          content: "";
+          
+          background-image: url("../img/icon-sprite.svg");
+          background-repeat: no-repeat;
+          background-size: 155px;
+          background-position: -124px -107px;
+        }
+      }
+
+      .cases__img {
+        max-width: 216px;
+      }
 
       .cases__text-block {
         max-width: 64%;
@@ -36,10 +178,14 @@
   }
 
   &__picture-wrapper {
-    min-width: 30%;
+    position: relative;
+
+    min-width: 36%;
   }
 
   &__img {
+    position: relative;
+
     max-width: 200px;
   }
 

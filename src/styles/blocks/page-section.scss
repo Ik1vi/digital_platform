@@ -1,16 +1,23 @@
 .page-section {
-  padding: 20px 0 134px;
+  padding: 20px 0 45px;
+  text-align: center;
 
-  &:nth-child(2) {
-    padding: 20px 0 45px;
+  &--begin {
+    padding: 85px 0 130px;
+
+    background-image: url("../img/header_background.svg");
+    background-repeat: no-repeat;
+    background-size: 1935px;
+    background-position: 50% 0px;
   }
 
-  &:nth-child(3) {
-    padding: 20px 0;
-  }
+  &--questions {
+    padding: 49px 0 67px;
 
-  &:last-child {
-    padding: 49px 0;
+    background-image: url("../img/footer_background.svg");
+    background-repeat: no-repeat;
+    background-size: 1920px;
+    background-position: 50% 0;
   }
 
   &__title {

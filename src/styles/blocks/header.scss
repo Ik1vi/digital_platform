@@ -1,5 +1,10 @@
 .header {
-  padding-bottom: 530px;;
+  padding-bottom: 140px;
+
+  background-image: url("../img/main-background.svg");
+  background-repeat: no-repeat;
+  background-size: 2284px;
+  background-position: -632px -64px;
 
   &__bar {
     @include flex-container(space-between, start);
@@ -20,5 +25,9 @@
     font-weight: bold;
     font-size: 35px;
     line-height: 111.4%;
+  }
+
+  &__section {
+    margin-top: 465px;
   }
 }
