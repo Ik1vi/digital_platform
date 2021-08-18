@@ -6,6 +6,10 @@
 
   text-align: left;
 
+  @media (max-width: 1024px) {
+    padding: 0;
+  }
+
   &__container {
     @include flex-container(space-between, center);
   }
@@ -16,6 +20,14 @@
     &:first-child {
       margin-bottom: 27px;
 
+      @media(max-width: 1024px) {
+        margin-bottom: 0;
+      }
+
+      @media (max-width: 680px) {
+        margin-bottom: 10px;
+      }
+
       .cases__picture-wrapper {
         position: relative;
         padding: 61px 43px 20px;
@@ -24,6 +36,16 @@
         background-repeat: no-repeat;
         background-size: 665px;
         background-position: 7px 20px;
+
+        @media (max-width: 1024px) {
+          background-size: 615px;
+          background-position: 10px 28px;
+        }
+
+        @media (max-width: 680px) {
+          max-width: 100%;
+          margin: 0 auto;
+        }
 
         &::before {
           position: absolute;
@@ -67,12 +89,24 @@
     &:nth-child(2) {
       .cases__picture-wrapper {
         position: relative;
+
         padding: 60px 50px 45px;
 
         background-image: url("../img/cases-sprite.svg");
         background-repeat: no-repeat;
         background-size: 665px;
         background-position: -384px 5px;
+
+        @media (max-width: 1024px) {
+          padding: 60px 37px 45px;
+        }
+
+        @media (max-width: 680px) {
+          order: -1;
+          
+          max-width: 100%;
+          margin: 0 auto;
+        }
 
         &::before {
           position: absolute;
@@ -116,6 +150,10 @@
       margin-bottom: 0;
       margin-top: 44px;
 
+      @media (max-width: 680px) {
+        margin-top: 0;
+      }
+
       .cases__picture-wrapper {
         position: relative;
         padding: 53px 54px 55px;
@@ -124,6 +162,18 @@
         background-repeat: no-repeat;
         background-size: 665px;
         background-position: 17px -352px;
+
+        @media (max-width: 1024px) {
+          padding: 53px 24px 55px;
+
+          background-size: 549px;
+          background-position: 2px -265px;
+        }
+
+        @media (max-width: 680px) {
+          max-width: 100%;
+          margin: 0 auto;
+        }
 
         &::before {
           position: absolute;
@@ -165,6 +215,16 @@
       .cases__text-block {
         max-width: 64%;
         padding: 70px 40px 70px 28px;
+
+        @media (max-width: 1024px) {
+          max-width: 55%;
+          padding: 40px 25px;
+        }
+
+        @media (max-width: 680px) {
+          max-width: 100%;
+          padding: 20px;
+        }
       }
 
       .cases__text {
@@ -173,6 +233,10 @@
 
       .cases__btn {
         margin-top: 90px;
+
+        @media (max-width: 680px) {
+          margin-top: 30px;
+        }
       }
     }
   }
@@ -181,6 +245,10 @@
     position: relative;
 
     min-width: 36%;
+
+    @media (max-width: 1024px) {
+      max-width: 47%;
+    }
   }
 
   &__img {
@@ -192,6 +260,16 @@
   &__text-block {
     max-width: 62%;
     padding: 70px 40px 70px 25px;
+
+    @media (max-width: 1024px) {
+      max-width: 55%;
+      padding: 40px 25px;
+    }
+
+    @media (max-width: 680px) {
+      max-width: 100%;
+      padding: 20px;
+    }
   }
 
   &__case-title {

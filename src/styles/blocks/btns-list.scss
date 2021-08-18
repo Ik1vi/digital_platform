@@ -5,14 +5,28 @@
   &__item {
     margin-right: 26px;
 
+    @media (max-width: 680px) {
+      min-width: 100%;
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+
     &:first-child {
       .btns-list__btn {
         padding: 11px 65px 11px 53px;
+
+        @media (max-width: 1024px) {
+          padding: 8px 22px;
+        }
       }
     }
 
     &:last-child {
       margin-right: 0;
+
+      @media (max-width: 680px) {
+        margin: 0;
+      }
     }
   }
 }

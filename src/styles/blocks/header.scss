@@ -3,18 +3,37 @@
 
   background-image: url("../img/main-background.svg");
   background-repeat: no-repeat;
-  background-size: 2284px;
-  background-position: -632px -64px;
+  background-size: 2527px;
+  background-position: 50% -105px;
+
+  @media (max-width: 1024px) {
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: 680px) {
+    text-align: center;
+    background-size: 2206px;
+    background-position: 43% -136px;
+  }
 
   &__bar {
     @include flex-container(space-between, start);
 
     padding: 28px 0;
+
+    @media (max-width: 680px) {
+      justify-content: center;
+      align-items: baseline;
+    }
   }
 
   &__logo {
     max-width: 208px;
     margin-top: 27px;
+
+    @media (max-width: 680px) {
+      margin-top: 10px;
+    }
   }
 
   &__title {
@@ -25,6 +44,18 @@
     font-weight: bold;
     font-size: 35px;
     line-height: 111.4%;
+
+    @media (max-width: 1024px) {
+      max-width: 504px;
+      font-size: 30px;
+    }
+
+    @media (max-width: 680px) {
+      max-width: 238px;
+      margin: 30px auto 0;
+
+      font-size: 25px;
+    }
   }
 
   &__section {

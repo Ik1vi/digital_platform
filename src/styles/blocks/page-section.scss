@@ -2,13 +2,33 @@
   padding: 20px 0 45px;
   text-align: center;
 
+  @media (max-width: 1024px) {
+    padding: 20px 0 0;
+  }
+
   &--begin {
     padding: 85px 0 130px;
 
     background-image: url("../img/header_background.svg");
     background-repeat: no-repeat;
-    background-size: 1935px;
-    background-position: 50% 0px;
+    background-size: 170%;
+    background-position: bottom;
+
+    @media (max-width: 1170px) {
+      background-position: top;
+    }
+    @media (max-width: 1024px) {
+      padding: 30px 0 80px;
+
+      background-position: bottom;
+    }
+    @media (max-width: 680px) {
+      margin-top: 305px;
+      padding: 10px 20px 50px;
+
+      background-position: bottom;
+      background-size: 350%;
+    }
   }
 
   &--questions {
@@ -30,14 +50,39 @@
     font-weight: bold;
     line-height: 117.4%;
 
+    @media (max-width: 1024px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 680px) {
+      font-size: 16px;
+      line-height: 18px;
+    }
+
     &--questions {
       font-size: 35px;
       line-height: 52px;
+
+      @media (max-width: 1024px) {
+        font-size: 30px;
+      }
+
+      @media (max-width: 680px) {
+        font-size: 24px;
+      }
     }
 
     &--primary {
       max-width: fit-content;
       font-size: 40px;
+
+      @media (max-width: 1024px) {
+        font-size: 35px;
+      }
+
+      @media (max-width: 680px) {
+        font-size: 25px;
+      }
 
       &::before {
         position: absolute;
@@ -53,6 +98,11 @@
         background-repeat: no-repeat;
         background-size: 155px;
         background-position: -144px 0;
+
+        @media( max-width: 680px) {
+          left: -16px;
+          top: 3px;
+        }
       }
 
       &::after {
@@ -69,6 +119,11 @@
         background-repeat: no-repeat;
         background-size: 155px;
         background-position: -144px 0;
+
+        @media( max-width: 680px) {
+          right: -16px;
+          top: 3px;
+        }
       }
     }
   }
@@ -80,5 +135,17 @@
 
   &__btns-list {
     margin-top: 39px;
+
+    @media (max-width: 680px) {
+      margin-top: 15px;
+    }
+  }
+
+  &__advantages {
+    margin-top: 90px;
+  
+    @media (max-width: 1024px) {
+      margin: 30px auto 0;
+    }
   }
 }

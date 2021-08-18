@@ -1,5 +1,4 @@
 .footer {
-
   &__section {
     padding-bottom: 18px;
     text-align: center;
@@ -10,9 +9,23 @@
 
     padding: 31px 78px 31px 62px;
     background-color: $dark-shades;
+
+    @media (max-width: 1170px) {
+      justify-content: center;
+    }
+
+    @media(max-width: 1024px) {
+      padding: 20px;
+    }
   }
 
   &__page-nav {
     @include indent-reset;
+  }
+
+  &__contacts {
+    @media (max-width: 1170px) {
+      margin-top: 20px;
+    }
   }
 }

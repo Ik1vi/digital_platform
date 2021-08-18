@@ -1,8 +1,16 @@
 .page {
   padding-bottom: 113px;
 
+  @media(max-width: 1024px) {
+    padding-bottom: 40px;
+  }
+
   &__section {
     margin-bottom: 137px;
+
+    @media (max-width: 1024px) {
+      margin-bottom: 30px;
+    }
 
     &:last-child {
       margin-bottom: 0;

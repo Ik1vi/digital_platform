@@ -5,6 +5,10 @@
 
     color: $WHITE;
     font-style: normal;
+
+    @media (max-width: 680px) {
+      font-size: 14px;
+    }
   }
 
   &__item {

@@ -3,7 +3,11 @@
   @include flex-container(center, center);
 
   padding-left: 38px;
-  margin-top: 90px;
+
+  @media (max-width: 1024px) {
+    max-width: 450px;
+    padding: 0;
+  }
 
   &__item {
     position: relative;
@@ -11,6 +15,15 @@
     max-width: 280px;
     padding: 159px 10px 10px;
     margin-right: 70px;
+
+    @media (max-width: 1170px) {
+      margin-right: 10px;
+    }
+
+    @media (max-width: 1024px) {
+      margin: 0;
+      margin-bottom: 20px;
+    }
 
     &::before {
       position: absolute;
@@ -70,6 +83,10 @@
       }
       &::after {
         background-position: -470px 7px;
+      }
+
+      @media (max-width: 1024px) {
+        margin-bottom: 0;
       }
     }
   }

@@ -8,6 +8,10 @@
   color: $primary-color;
   font-weight: 700;
 
+  @media (max-width: 680px) {
+    font-size: 14px;
+  }
+
   &::before {
     position: absolute;
 
@@ -17,6 +21,14 @@
     width: 38px;
 
     content: url("../img/logo-icon.svg");
+
+    @media (max-width: 680px) {
+      left: 10px;
+      top: 3px;
+
+      height: 30px;
+      width: 30px;
+    }
   }
 
   &--colored {
@@ -25,6 +37,16 @@
     color: $WHITE;
     background-color: $primary-color;
     font-size: 16px;
+
+    @media (max-width: 1024px) {
+      padding: 8px 22px 8px 52px;
+
+      font-size: 16px;
+    }
+
+    @media (max-width: 680px) {
+      font-size: 14px;
+    }
 
     &::before {
       position: absolute;
@@ -35,6 +57,11 @@
       width: 14px;
   
       content: url("../img/logo-icon-transparent.svg");
+
+      @media (max-width: 1024px) {
+        left: 30px;
+        top: 6px;
+      }
     }
   }
 }

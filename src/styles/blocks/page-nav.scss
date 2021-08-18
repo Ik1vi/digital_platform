@@ -7,11 +7,19 @@
     @include list-reset;
     @include flex-container(space-between, center);
     padding: 8px 4px;
+
+    @media (max-width: 680px) {
+      font-size: 14px;
+    }
   }
 
   &__item {
     margin-right: 4px;
     min-width: 165px;
+
+    @media (max-width: 680px) {
+      min-width: 130px;
+    }
 
     &:last-child {
       margin-right: 0;
@@ -21,6 +29,11 @@
   &__link {
     position: relative;
     padding: 0 23px;
+
+    @media (max-width: 680px) {
+      max-width: 140px;
+      padding: 0 16px;
+    }
 
     &--active {
       font-weight: 400;
@@ -39,6 +52,15 @@
 
         border-radius: 50px;
         background-color: $primary-color;
+
+        @media (max-width: 680px) {
+          left: 2px;
+          top: -7px;
+          z-index: -1;
+
+          height: 35px;
+          width: 130px;
+        }
       }
     }
   }
@@ -51,6 +73,20 @@
 
     .page-nav__item {
       margin-right: 32px;
+
+      @media(max-width: 1024px) {
+        margin: 0;
+        min-width: 50%;
+  
+        text-align: center;
+      }
+
+      @media (max-width: 680px) {
+        min-width: 100%;
+        margin-bottom: 10px;
+        
+        font-size: 14px;
+      }
 
       &:last-child {
         margin-right: 0;
