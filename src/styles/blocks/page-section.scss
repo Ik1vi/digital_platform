@@ -73,7 +73,9 @@
     }
 
     &--primary {
-      max-width: fit-content;
+      width: fit-content;
+      max-width: 290px;
+      
       font-size: 40px;
 
       @media (max-width: 1024px) {
@@ -147,5 +149,9 @@
     @media (max-width: 1024px) {
       margin: 30px auto 0;
     }
+  }
+
+  &__cases {
+    margin-top: 20px;
   }
 }
